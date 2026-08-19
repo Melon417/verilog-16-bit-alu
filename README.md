@@ -1,14 +1,16 @@
 # 16-bit ALU Design and Verification
 
-16-bit ALU written in Verilog/SystemVerilog with arithmetic, logic, and shift operations. The project includes a testbench for validating operation selection, output correctness, and status flag behavior.
+16-bit ALU written in Verilog/SystemVerilog with arithmetic, logic, and shift operations. The project includes a self-checking testbench for validating operation selection, output correctness, and status flag behavior.
 
 ## Project Status
 
-In Progress
+Initial RTL and self-checking testbench completed. Waveform screenshots and synthesis results will be added next.
 
 ## Overview
 
 This project implements a 16-bit arithmetic logic unit similar to a small processor datapath block. The ALU supports common arithmetic, bitwise logic, and shift operations while producing status flags used by digital systems.
+
+The project focuses on RTL design fundamentals, combinational logic, status flag generation, and self-checking verification.
 
 ## Features
 
@@ -20,7 +22,8 @@ This project implements a 16-bit arithmetic logic unit similar to a small proces
 - Carry flag
 - Overflow flag
 - Negative flag
-- Directed testbench cases for normal and edge-case inputs
+- Self-checking testbench
+- Directed test cases for normal and edge-case inputs
 
 ## Repository Structure
 
@@ -31,5 +34,7 @@ verilog-16-bit-alu/
 ├── tb/
 │   └── alu_16bit_tb.sv
 ├── docs/
+│   ├── test_plan.md
 │   └── waveforms/
+│       └── README.md
 └── README.md
